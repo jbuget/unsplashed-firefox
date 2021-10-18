@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Unsplashed",
+  "version": "1.0",
+
+  "description": "Addon for Firefox to remove ad sections",
+
+  "icons": {
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.unsplash.com/*"],
+      "js": ["unsplashed.js"]
+    }
+  ]
+
+}
